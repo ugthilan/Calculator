@@ -33,7 +33,17 @@ for (btn of btns) {
         // Exponentiation operation (x^2)
         if (display.value !== "") {
           let number = parseFloat(display.value);
-          display.value = Math.pow(number, 2);
+          return display.value = Math.pow(number, 2);
+        }
+      }
+
+
+
+      else if (this.value === "^") {
+        // Exponentiation operation (x^2)
+        if (display.value !== "") {
+          let number = parseFloat(display.value);
+          return display.value = Math.pow(number, number);
         }
       }
       
@@ -49,24 +59,4 @@ for (btn of btns) {
 }
 
 
-	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Scientific-Calculator-Using-JS
-//This is a simple project of Vanilla JavaScript (Scientific Calculator)
